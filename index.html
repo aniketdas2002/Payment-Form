@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="container">
+        <form action="action.php">
+            <h1>Payment Form</h1>
+            <hr>
+            <p>Required fields are followed by *</p>
+            <h3>Contact Information</h3>
+            <hr>
+
+            <p>Name* <input type="text" required placeholder="Name" class="input"></p>
+
+            <fieldset>
+                <p>Gender*</p>
+                <label for="Male">
+                    <input type="radio" required name="Gender" id="Male">Male
+                </label>
+                <label for="Female">
+                    <input type="radio" required name="Gender" id="Female">Female
+                </label>
+                <label for="others">
+                    <input type="radio" required name="Gender" id="others">others
+                </label>
+            </fieldset>
+
+            <p>Address <textarea name="" id="" cols="10" rows="10" class="input"
+                    placeholder="Enter your address"></textarea></p>
+
+            <p>Email* <input type="email" required class="input" placeholder="xyz@gmail.com"></p>
+            <p>Pincode* <input type="number" required name="" id="" class="input" placeholder="700001"></p>
+
+            <h3>Payment Information</h3>
+            <hr>
+
+            <p>Card Type* <select name="" id="cardtype" class="input" required>
+                    <option value="">--Select Card</option>
+                    <option value="">Visa</option>
+                    <option value="">Master Card</option>
+                    <option value="">Rupay</option>
+                </select></p>
+
+            <p>Card Number* <input type="number" required name="" id="" class="input" placeholder="0000 1111 2222 3333"></p>
+
+            <p>Expartaion Date* <input type="date" required name="" id="" class="input"></p>
+
+            <p>CVV* <input type="number" required name="" id="" class="input" placeholder="123"></p>
+
+            <button>Pay Now</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
